@@ -23,7 +23,7 @@ def crawl_nhatot_detail(url):
     try:
         result={}
         driver.get(url)
-        time.sleep(3)  # vẫn giữ sleep
+        time.sleep(3)
         price = driver.find_element(By.XPATH,'/html/body/div[1]/div/div[4]/div[1]/div/div[2]/div[2]/div/div[2]/div/div/div/div[3]/div/div/b').text
         published_at = driver.find_element(By.XPATH,'/html/body/div[1]/div/div[4]/div[1]/div/div[2]/div[2]/div/div[2]/div/div/div/div[4]/div[2]/span').text
 

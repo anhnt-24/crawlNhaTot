@@ -9,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 link_list = []
 try:
-    for page in range(126, 150):
+    for page in range(1, 150):
         options = Options()
         options.add_argument("--no-sandbox")
         options.add_argument("--headless")
